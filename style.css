@@ -74,7 +74,7 @@ blockquote ul {
   -webkit-transition: all .5s ease;
 }
 #topside header.sticky {
-  position: fixed;
+  position: relative;
   top: 0;
   background: #5e5e5e;
   color: #f5f5f5;
