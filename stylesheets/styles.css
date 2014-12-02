@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:20px;
+  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -21,7 +21,14 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:48px;
+}
+h2 {
+  font-size:36px;
+  font-style: oblique;
+}
+h3 {
+  font-size:32px;
 }
 
 h2 {
@@ -46,7 +53,7 @@ a small {
 }
 
 .wrapper {
-  width:860px;
+  width:95%;
   margin:0 auto;
 }
 
@@ -55,6 +62,7 @@ blockquote {
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
+  font-size: 2em;
 }
 
 code, pre {
@@ -95,34 +103,16 @@ img {
   max-width:100%;
 }
 
-
-header ul a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-  padding-top:6px;
-  height:40px;
+.clearfix {
+  overflow: auto;
 }
+
 
 strong {
   color:#222;
   font-weight:700;
 }
 
-
-header ul a strong {
-  font-size:14px;
-  display:block;
-  color:#222;
-}
-
-section {
-  width:500px;
-  float:right;
-  padding-bottom:50px;
-}
 
 small {
   font-size:11px;
@@ -136,20 +126,96 @@ hr {
 }
 
 
+header{
+  width: 100%;
+  float: right;
+}
+header > .summary, header > .details {
+  width: 100%;
+  margin: 0;
+}
 
-@media print, screen and (max-width: 960px) {
-  
+header h1, header > .details{
+    text-align: center;
+}
+
+header .details > p {
+  text-align: center;
+}
+
+header p {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+#objective, #experience, #education, #skills {
+  clear: both;
+  height: auto;
+}
+
+section {
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.summary .date{
+  float: right;
+}
+
+.summary h4{
+  margin-bottom: 0;
+}
+
+.item{
+  clear: both;
+}
+
+@media print, screen and (min-width: 960px) {
+  body {
+    word-wrap:break-word;
+  }
+
   div.wrapper {
     width:auto;
     margin:0;
   }
   
+  header > .summary{
+      width: 60%;
+      margin: 0;
+    }
+
+    header h1 {
+      text-align: right;
+    }
+
+  header > .details{
+      width: 30%;
+      margin-left: 5%;
+    }
+    header > .details p {
+      text-align: right;
+    }
+
   header, section, footer {
     float:none;
     position:static;
     width:auto;
   }
   
+  section {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+  }
+  .summary{
+    width: 30%;
+  }
+  .details{
+    width: 60%;
+    margin-left: 5%;
+  }
+
 }
 
 @media print, screen and (max-width: 720px) {
@@ -160,6 +226,8 @@ hr {
   header {
     padding:0;
   }
+
+
   
   header ul, header p.view {
     position:static;
@@ -168,16 +236,7 @@ hr {
   pre, code {
     word-wrap:normal;
   }
-}
 
-@media print, screen and (max-width: 480px) {
-  body {
-    padding:15px;
-  }
-  
-  header ul {
-    display:none;
-  }
 }
 
 @media print {
@@ -187,3 +246,5 @@ hr {
     color:#444;
   }
 }
+
+
