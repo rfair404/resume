@@ -139,6 +139,9 @@ header h1, header > .details{
     text-align: center;
 }
 
+header h3 {
+  width: 100%;
+}
 header h3:before{
 
 }
@@ -152,7 +155,7 @@ header p {
   margin-bottom: 5px;
 }
 
-#objective, #experience, #education, #skills {
+#objective, #pro-experience, #vol-experience, #education, #skills {
   clear: both;
   height: auto;
 }
