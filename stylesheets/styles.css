@@ -5,6 +5,7 @@ body {
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  background-color: whitesmoke;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,22 +135,49 @@ header > .summary, header > .details {
   width: 100%;
   margin: 0;
 }
+  header figure {
+    height: 100px;
+    position: relative;
+
+  }
+  header figure .imagewrap {
+      position: absolute;
+      left: 50%;
+      height: 100px;
+      width: 100px;
+      margin-left: -50px;
+  }
+  header figure .imagewrap img{
+    height: auto;
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+  }
 
 header h1, header > .details{
     text-align: center;
 }
 
-header h3 {
+header h2, header h3 {
   width: 100%;
+  clear: both;
 }
-header h3:before{
 
+header h3 > .fa, .summary h3 > .fa{
+  margin-left: 10px;
+  color: #ddd;
+  float: right;
 }
 
 header .details > p {
   text-align: center;
 }
 
+header .details > p > .fa{
+  color: #ddd;
+/*  text-shadow: 1px 1px 2px white;*/
+  margin-left: 10px;
+}
 header p {
   text-align: right;
   margin-bottom: 5px;
@@ -161,7 +189,7 @@ header p {
 }
 
 section {
-  width: 90%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -186,10 +214,12 @@ section {
     width:auto;
     margin:0;
   }
-  
+
+
+
   header > .summary{
       width: 70%;
-      padding-left: 25%;
+      padding-left: 30%;
       margin: 0;
       box-sizing: border-box;
     }
@@ -199,8 +229,9 @@ section {
     }
 
   header > .details{
-      width: 20%;
-      margin-left: 5%;
+      width: 29%;
+      margin-left: 1%;
+      float: right;
     }
     header > .details p {
       text-align: right;
@@ -235,8 +266,6 @@ section {
   header {
     padding:0;
   }
-
-
   
   header ul, header p.view {
     position:static;
