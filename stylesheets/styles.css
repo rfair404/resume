@@ -164,8 +164,9 @@ header h2, header h3 {
 }
 
 header h3 > .fa, .summary h3 > .fa{
-  margin-right: 10px;
+  margin-left: 10px;
   color: #ddd;
+  float: right;
 }
 
 header .details > p {
@@ -188,7 +189,7 @@ header p {
 }
 
 section {
-  width: 90%;
+  width: 100%;
   margin-bottom: 30px;
 }
 
