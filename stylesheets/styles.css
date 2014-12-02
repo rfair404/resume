@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 body {
   padding:20px;
   font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -139,6 +139,10 @@ header h1, header > .details{
     text-align: center;
 }
 
+header h3:before{
+
+}
+
 header .details > p {
   text-align: center;
 }
@@ -181,16 +185,18 @@ section {
   }
   
   header > .summary{
-      width: 60%;
+      width: 70%;
+      padding-left: 25%;
       margin: 0;
+      box-sizing: border-box;
     }
 
     header h1 {
-      text-align: right;
+      text-align: center;
     }
 
   header > .details{
-      width: 30%;
+      width: 20%;
       margin-left: 5%;
     }
     header > .details p {
