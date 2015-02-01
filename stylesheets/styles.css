@@ -289,15 +289,16 @@ section {
     visibility: hidden;
   }
   header .summary{
-    width: 20%;
+    width: 30%;
     padding: 0;
   }
   header .summary h1{
     text-align: left;
   }
   header .details{
-    width: 75%;
+    width: 65%;
     margin-left: 5%;
+    text-align: right;
   }
   header .details p{
     display: inline;
@@ -308,6 +309,7 @@ section {
     display: none;
     visibility: hidden;
   }
+
 
   h1{
     font-size: 18px;
