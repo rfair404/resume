@@ -135,6 +135,15 @@ header > .summary, header > .details {
   width: 100%;
   margin: 0;
 }
+
+header .details a{
+  color: #444;
+}
+header .details .fa{
+  color: #777;
+  margin-left: 10px;
+}
+
   header figure {
     height: 100px;
     position: relative;
