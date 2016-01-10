@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    float: right;
+
+    > .summary,
+    > .details {
+      width: 100%;
+      margin: 0;
+    }
+
+    figure {
+        height: 100px;
+        position: relative;
+    }
+
+    figure .imagewrap {
+      position: absolute;
+      left: 50%;
+      height: 100px;
+      width: 100px;
+      margin-left: -50px;
+    }
+
+    figure .imagewrap img{
+    height: auto;
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    }
+
+    h1, > .details{
+        text-align: center;
+    }
+
+    h2, h3 {
+      width: 100%;
+      clear: both;
+    }
+
+    h3 > .fa,
+    .summary h3 > .fa{
+      margin-left: 10px;
+      color: #ddd;
+      float: right;
+    }
+
+    .details > p {
+      text-align: center;
+    }
+
+    .details > p > .fa{
+      color: #ddd;
+      margin-left: 10px;
+    }
+
+    p {
+      text-align: right;
+      margin-bottom: 5px;
+    }
+}
