@@ -184,8 +184,7 @@ header .summary h3 > .fa {
 header .details > p {
   text-align: center;
 }
-header .details > p > .fa {
-  color: #ddd;
+header .details > p .fa {
   margin-left: 10px;
 }
 header p {
