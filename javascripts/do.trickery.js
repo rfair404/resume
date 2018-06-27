@@ -1,1 +1,1 @@
-console.log('Seriously, you should just hire me.');
+console.log('Seriously, you should hire me.');

@@ -197,6 +197,10 @@ header p {
   height: auto;
 }
 
+#education {
+  page-break-before: always;
+}
+
 section {
   width: 100%;
   margin-bottom: 30px;
@@ -219,12 +223,15 @@ section {
     word-wrap:break-word;
   }
 
+  .page-break {
+    display: block;
+    break-after: always;
+  }
+
   div.wrapper {
     width:auto;
     margin:0;
   }
-
-
 
   header > .summary{
       width: 70%;
