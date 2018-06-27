@@ -1,1 +1,0 @@
-var elm=jQuery("#topside header"),stickyoffset=elm.offset().top,stickyheight=elm.height();jQuery(document).on("scroll",function(){jQuery(window).scrollTop()>stickyoffset+stickyheight?elm.addClass("sticky"):elm.removeClass("sticky")});

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 body {
   padding: 20px 5%;
   font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -170,6 +170,9 @@ header h1,
 header > .details {
   text-align: center;
 }
+header h2 {
+  text-align: center;
+}
 header h2,
 header h3 {
   width: 100%;
@@ -184,7 +187,8 @@ header .summary h3 > .fa {
 header .details > p {
   text-align: center;
 }
-header .details > p .fa {
+header .details > p > .fa {
+  color: #ddd;
   margin-left: 10px;
 }
 header p {
@@ -194,6 +198,10 @@ header p {
 @media print {
   body {
     background-color: transparent;
+  }
+  .page-break {
+    display: block;
+    break-after: page;
   }
 }
 @media print, screen and (min-width: 960px) {
