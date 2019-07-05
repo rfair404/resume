@@ -335,10 +335,6 @@ header p {
     display: none;
     visibility: hidden;
   }
-  .pb {
-    display: block;
-    page-break-before: always;
-  }
   #contributions {
     display: none;
     visibility: hidden;
