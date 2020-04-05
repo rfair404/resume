@@ -1,3 +1,3 @@
 ### Russell Fair's Professional Resume
 
-I use git to store my resume. You can view it at [rfair404.github.io/resume](http://rfair404.github.io/resume).
+Yeah, I'm a nerd; I use git to version contro my resume. You can view the pretty version at [resume.rfair.io](https://resume.rfair.io).
