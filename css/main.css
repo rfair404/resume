@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 body {
   padding: 20px 5%;
   font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -195,6 +195,9 @@ header p {
   text-align: right;
   margin-bottom: 5px;
 }
+header .social > a {
+  padding-left: 5px;
+}
 @media print {
   body {
     background-color: transparent;
@@ -292,7 +295,7 @@ header p {
     display: inline;
     margin-left: 40px;
   }
-  header .details p.twitter {
+  header .details p.ham {
     display: none;
     visibility: hidden;
   }
@@ -334,6 +337,10 @@ header p {
   div .fa {
     display: none;
     visibility: hidden;
+  }
+  .pb {
+    display: block;
+    page-break-before: always;
   }
   #contributions {
     display: none;
