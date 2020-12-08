@@ -338,7 +338,10 @@ header .social > a {
   header h3 {
     text-align: center;
   }
-  div .fa {
+  div .fa,
+  div .fas,
+  div .far,
+  div .fab {
     display: none;
     visibility: hidden;
   }
